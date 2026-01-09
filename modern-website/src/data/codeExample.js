@@ -8,8 +8,8 @@ export const codeExample = {
     const [ code , setCode ] = useState ('');
 
     const handleCompletion = async () =>{
-        const suggestion = await CodeFFlow.complete(code);
-        setCode(suggestion);
+    const suggestion = await CodeFFlow.complete(code);
+     setCode(suggestion);
     };
     return (
     <div className="app">
@@ -27,7 +27,7 @@ export const codeExample = {
     import {useEffect} from 'react;
 
 
-    function App(){
+    function Hero(){
     const [ code , setCode ] = useState ('');
     useEffect(()=>{
       const handleMouseMove = (event) => {
@@ -56,8 +56,7 @@ export const codeExample = {
     import {useState} from 'react';
     import {CodeFlow} from 'react;
 
-
-    function App(){
+    function Navbar(){
     const [ code , setCode ] = useState ('');
 
     const handleCompletion = async () =>{
