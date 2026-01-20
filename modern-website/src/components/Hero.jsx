@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
-import { ChevronDown, Sparkle } from "lucide-react";
+import { ChevronDown, GitBranch, Sparkle } from "lucide-react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { cardsFloating, codeExample } from "../data/codeExample";
-import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/prism";
+// import { Github } from "react-syntax-highlighter/dist/esm/styles/hljs";
+// import { GitHub } from "lucide-react";
 
 export default function Test() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -32,7 +34,7 @@ export default function Test() {
       <div className="mx-w-7xl mx-auto text-center relative w-full">
         <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center relative">
           <div>
-            <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700">
+            <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 hover:scale-107 cursor-pointer hover:bg-blue-500/40 transition-all">
               <Sparkle className="w-4 h-4 text-blue-400" />
               <span className="text-xs">Introducing CodeFlowing</span>
             </div>
@@ -60,7 +62,7 @@ export default function Test() {
           </div>
           <div className="relative order-2 w-full">
             <div className="relative bg-white/5 backdrop-blur-xl rounded-xl sm:-2xl p-3 sm:p-4 shadow-2xl border border-white/10">
-              <div className="bg-gradient-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:w-[450px] border border-white/5">
+              <div className="bg-gradient-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:h-[450px] border border-white/5">
                 {/* Hero Content */}
                 <div className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-white/5 backdrop-blur-sm border-b border-white/10">
                   <div className="flex items-center sm:space-x-2">
@@ -114,6 +116,7 @@ export default function Test() {
                       style={nightOwl}
                       customStyle={{
                         margin: 0,
+                        textAlign: "left",
                         borderRadius: "8px",
                         fontSize: "11px",
                         height: "100%",
