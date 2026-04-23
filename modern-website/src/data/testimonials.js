@@ -1,9 +1,9 @@
-import johnDoe from "../assets/john-doe.jpg";
-import janeSmith from "../assets/jane-smith.jpg";
-import joshBrown from "../assets/josh-brown.jpg";
+import johnDoe from "../assets/john-doe.png";
+import janeSmith from "../assets/jane-smith.png";
 import emilyWhite from "../assets/emily-white.jpg";
 import michaelBrown from "../assets/michael-brown.png";
-import sarahGreen from "../assets/sara-green.jpg";
+import sarahGreen from "../assets/sara-green.png";
+import image from "../assets/image.png";
 
 export const testimonials = [
   {
@@ -23,7 +23,7 @@ export const testimonials = [
   {
     name: "Josh Brown",
     role: "Product Manager",
-    image: joshBrown,
+    image: image,
     feedBack:
       "A must-have tool for any product manager. The insights and analytics provided are invaluable for making informed decisions.",
   },
